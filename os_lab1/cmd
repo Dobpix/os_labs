@@ -1,0 +1,38 @@
+• help
+• echo Это тест встроенной команды echo
+• clr                     (очистка экрана)
+• cd ..                   
+• cd                      (показать текущий каталог)
+• dir
+• dir ..
+• environ
+• pause                   (нажать Enter)
+• quit                    (должен выйти с сообщением "До свидания!")
+
+
+             ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ (shell и parent)
+
+
+echo $shell
+echo $parent
+
+               ВНЕШНИЕ КОМАНДЫ (fork + exec)
+
+ls -la
+pwd
+whoami
+date
+uname -a
+
+           ПЕРЕНАПРАВЛЕНИЕ ВВОДА/ВЫВОДА
+
+ls -la > output.txt
+cat output.txt
+
+echo "Тест записи в файл" > test.txt
+cat test.txt
+
+cat < test.txt
+
+ls -la >> output.txt
+cat output.txt
